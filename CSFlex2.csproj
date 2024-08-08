@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4FDECD9-41DC-430C-A1E8-45ED8AB78C0A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>CSFlex</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CSFlex</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>CSFlex.MainClass</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+	<LangVersion>Preview</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CharClasses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CharClassException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CharClassInterval.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CharSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CharSetEnumerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CountEmitter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DFA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Emitter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EOFActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorMessages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneratorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HiLowEmitter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IntCharSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interval.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IntPair.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IScanner.cs" />
+    <Compile Include="LexicalStates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LexParse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LexScan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MacroException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Macros.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NFA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Options.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Out.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackEmitter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RegExp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RegExp1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RegExp2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RegExps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LR_Parser.cs" />
+    <Compile Include="SilentExit.cs" />
+    <Compile Include="Symbol.cs" />
+    <Compile Include="VirtualParseStack.cs" />
+    <Compile Include="ListStack.cs" />
+    <Compile Include="ScannerException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SemCheck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Skeleton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StatePairList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StateSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StateSetEnumerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StdOutWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SymbolContants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="Messages.xml" />
+    <EmbeddedResource Include="skeleton.default" />
+    <EmbeddedResource Include="skeleton.nested" />
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
